@@ -51,7 +51,7 @@ select option{background:var(--bg3)}
 #setupError{color:var(--red);font-size:12px;min-height:18px;margin-top:8px}
 
 /* APP SHELL */
-#app{display:none;flex-direction:column;min-height:100vh}
+#app{display:flex;flex-direction:column;min-height:100vh}
 header{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 20px;display:flex;align-items:center;gap:16px;height:56px;position:sticky;top:0;z-index:100}
 .logo{font-weight:700;font-size:16px;color:var(--accent);white-space:nowrap}
 .logo span{color:var(--text2);font-weight:400;font-size:13px}
@@ -145,7 +145,7 @@ textarea{resize:vertical;min-height:70px}
 <body>
 
 <!-- SETUP SUPABASE -->
-<div id="setupScreen" style="display:none">
+<div id="setupScreen" style="display:flex">
 <div class="setup-box">
   <h2>⚙️ Configurar Supabase</h2>
   <p>Ingresá las credenciales de tu proyecto Supabase para habilitar la sincronización en la nube.</p>
@@ -159,7 +159,7 @@ textarea{resize:vertical;min-height:70px}
 </div>
 
 <!-- LOGIN -->
-<div id="loginScreen" style="display:none">
+<div id="loginScreen" style="display:flex">
 <div class="login-box">
   <h2>Vencimientos</h2>
   <p>Fadentix S.A. — Sistema de gestión de vencimientos</p>
@@ -184,7 +184,7 @@ textarea{resize:vertical;min-height:70px}
     <button onclick="showView('rubros')" data-view="rubros">🏷️ Rubros</button>
     <button onclick="showView('proveedores')" data-view="proveedores">🏢 Proveedores</button>
     <button onclick="showView('funcionarios')" data-view="funcionarios">👤 Funcionarios</button>
-    <button onclick="showView('usuarios')" data-view="usuarios" id="navUsuarios" style="display:none">⚙️ Usuarios</button>
+    <button onclick="showView('usuarios')" data-view="usuarios" id="navUsuarios" style="display:flex">⚙️ Usuarios</button>
   </nav>
   <div class="header-right">
     <div class="sync-dot off" id="syncDot" title="Sincronización"></div>
